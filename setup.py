@@ -23,6 +23,10 @@ setup(
         'poeditor',
         'pyyaml',
     ],
+    dependency_links=[
+        # Make sure to include the `#egg` portion so the `install_requires` recognizes the package
+        'git+ssh://git@github.com/goalplan/python-poeditor.git@085ddd6256ffea229109ff356f5078b1e26dc1ea#egg=poeditor'
+    ],
     description='Command line client for POEditor service',
     long_description_content_type='text/markdown',
     long_description=long_description,
